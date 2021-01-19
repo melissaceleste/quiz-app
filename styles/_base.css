@@ -7,6 +7,17 @@ body {
   font-size: 112.5%;
   line-height: 1.5;
   margin: 0;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+}
+
+header {
+  background: #e2dfda;
+  margin: 0;
+  color: ivory;
+  text-align: center;
+  box-shadow: 0 1.5px 5px;
+  overflow: hidden;
 }
 
 h1,
@@ -15,7 +26,21 @@ h3 {
   line-height: 1.3;
 }
 
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
 input,
 button {
   font-size: 1em;
+}
+img {
 }
