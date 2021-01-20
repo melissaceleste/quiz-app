@@ -9,15 +9,17 @@ body {
   margin: 0;
   text-align: center;
   font-family: 'Amatic SC', cursive;
+  background= "images/bg.jpeg"; 
 }
 
 header {
-  background: #e2dfda;
+  background: #ede3d7;
   margin: 0;
   color: ivory;
   text-align: center;
+  border-radius: 40% 30% 20% 40%;
+  border: solid 1px black;
   box-shadow: 0 1.5px 5px;
-  overflow: hidden;
 }
 
 h1,
@@ -41,4 +43,9 @@ h3 {
 input,
 button {
   font-size: 1em;
+}
+
+img {
+  padding: 4px;
+  margin-bottom: 0px;
 }
