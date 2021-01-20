@@ -4,16 +4,13 @@
   border: solid 1px black;
   margin: 60px 40px 60px 40px;
   box-shadow: 0 1.5px 5px;
+  position: relative;
 }
 
 .qbox__question {
-  margin: 20px;
-  border: 2px solid #555;
-  color: #333;
+  margin: 40px 20px 10px 20px;
+  border: solid 1px black;
   font-weight: 400;
-}
-
-.qbox__answer {
 }
 
 .qbox__results {

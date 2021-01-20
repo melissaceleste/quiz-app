@@ -9,12 +9,12 @@ body {
   margin: 0;
   text-align: center;
   font-family: 'Amatic SC', cursive;
-  background= "images/bg.jpeg"; 
 }
 
 header {
   background: #ede3d7;
-  margin: 0;
+  xmargin: 0;
+  padding-bottom: 40px;
   color: ivory;
   text-align: center;
   border-radius: 40% 30% 20% 40%;
@@ -46,6 +46,8 @@ button {
 }
 
 img {
-  padding: 4px;
-  margin-bottom: 0px;
+  padding: 15px 0 15px 0;
+  margin-bottom: 1px;
+
+  xbox-shadow: 0px 1.5px 1px ivory;
 }
