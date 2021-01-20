@@ -1,9 +1,5 @@
 .navigation {
-  xbackground: #ede3d7;
   margin: 0px;
-
-  xbox-shadow: 0 1.5px 5px ivory;
-  xborder-radius: 70% 70% 20% 40%;
   border: solid 1px black;
   display: flex;
   justify-content: space-evenly;
