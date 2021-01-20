@@ -13,7 +13,7 @@ body {
 
 header {
   background: #ede3d7;
-  xmargin: 0;
+  margin: 0;
   padding-bottom: 40px;
   color: ivory;
   text-align: center;
@@ -26,10 +26,6 @@ h1,
 h2,
 h3 {
   line-height: 1.3;
-}
-
-h1 {
-  font-size: 50px;
 }
 
 h2 {
