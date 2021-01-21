@@ -17,24 +17,24 @@
     </header>
 
     <main class="app-grid__main">
-      <h2 class="h2lines">
+      <h2 class="underline">
         Your bookmarks
-        <img
-          src="./images/bookmarks.svg"
-          alt="bookmark"
-          width="30px"
-          class="h2lines"
-        />
+        <img src="./images/bookmarks.svg" alt="bookmark" width="30" height="" />
       </h2>
 
-      <details class="qbox">
+      <details class="quiz-card">
         <div class="bookmark">
-          <img src="./images/bookmark.svg" alt="bookmark" width="30px" />
+          <img
+            src="./images/bookmark.svg"
+            alt="bookmark"
+            width="30"
+            height=""
+          />
         </div>
-        <summary class="qbox__question">
+        <summary class="quiz-card__question">
           1. Welche der Antworten ist keine echte Eissorte?
         </summary>
-        <ul class="qbox__answer">
+        <ul class="quiz-card__answer">
           <input type="radio" name="q1" value="a" id="q1a" />
           <label for="q1a">Option 1</label
           ><br />
@@ -48,19 +48,24 @@
             >Option 4</label
           ><br />
         </ul>
-        <div id="qbox__results">The Right answers is</div>
+        <h3 id="quiz-card__results">The Right answers is</h3>
         <strong>Question 1:</strong> The correct answer is the
         <strong>Option 1</strong>.
       </details>
 
-      <details class="qbox">
+      <details class="quiz-card">
         <div class="bookmark">
-          <img src="./images/bookmark.svg" alt="bookmark" width="30px" />
+          <img
+            src="./images/bookmark.svg"
+            alt="bookmark"
+            width="30"
+            height=""
+          />
         </div>
-        <summary class="qbox__question">
+        <summary class="quiz-card__question">
           1. Welche der Antworten ist keine echte Eissorte?
         </summary>
-        <ul class="qbox__answer">
+        <ul class="quiz-card__answer">
           <input type="radio" name="q1" value="a" id="q1a" />
           <label for="q1a">Option 1</label
           ><br />
@@ -74,19 +79,19 @@
             >Option 4</label
           ><br />
         </ul>
-        <div id="qbox__results">The Right answers is</div>
+        <h3 id="quiz-card__results">The Right answers is</h3>
         <strong>Question 1:</strong> The correct answer is the
         <strong>Option 1</strong>.
       </details>
 
-      <details class="qbox">
+      <details class="quiz-card">
         <div class="bookmark">
           <img src="./images/bookmark.svg" alt="bookmark" width="30px" />
         </div>
-        <summary class="qbox__question">
+        <summary class="quiz-card__question">
           1. Welche der Antworten ist keine echte Eissorte?
         </summary>
-        <ul class="qbox__answer">
+        <ul class="quiz-card__answer">
           <input type="radio" name="q1" value="a" id="q1a" />
           <label for="q1a">Option 1</label
           ><br />
@@ -100,7 +105,7 @@
             >Option 4</label
           ><br />
         </ul>
-        <div id="qbox__results">The Right answers is</div>
+        <h3 id="quiz-card__results">The Right answers is</h3>
         <strong>Question 1:</strong> The correct answer is the
         <strong>Option 1</strong>.
       </details>
@@ -108,19 +113,28 @@
 
     <nav class="navigation">
       <a href="index.html"
-        ><img src="./images/home.svg" width="40px" alt="home"
+        ><img src="./images/home.svg" width="40" height="" alt="home"
       /></a>
 
       <a href="bookmarks.html"
-        ><img src="./images/bookmark.svg" width="22px" alt="bookmarks"
+        ><img
+          src="./images/bookmark.svg"
+          width="22"
+          height=""
+          alt="bookmarks"
+          class="active-icon"
       /></a>
 
-      <a href="#create"
-        ><img src="./images/createsmall.svg" width="30px" alt="create"
+      <a href="create.html"
+        ><img src="./images/createsmall.svg" width="30" height="" alt="create"
       /></a>
 
-      <a href="#profile"
-        ><img src="./images/profile.svg" width="40px" alt="profile/Settings"
+      <a href="profile.html"
+        ><img
+          src="./images/profile.svg"
+          width="40"
+          height=""
+          alt="profile/Settings"
       /></a>
     </nav>
   </body>

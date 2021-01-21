@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="app-grid" background="./images/bg.jpeg">
+  <body class="app-grid">
     <header>
       <h1>Quizzzle</h1>
     </header>
@@ -21,14 +21,19 @@
           </div> -->
 
     <main class="app-grid__main">
-      <section class="qbox">
+      <section class="quiz-card">
         <div class="bookmark">
-          <img src="./images/bookmark.svg" alt="bookmark" width="30px" />
+          <img
+            src="./images/bookmark.svg"
+            alt="bookmark"
+            width="30"
+            height=""
+          />
         </div>
-        <p class="qbox__question">
+        <p class="quiz-card__question">
           1. Welche der Antworten ist keine echte Eis-Geschmackssorte?
         </p>
-        <ul class="qbox__answer">
+        <ul class="quiz-card__answer">
           <input type="radio" name="q1" value="a" id="q1a" />
           <label for="q1a">Gurkensalat</label
           ><br />
@@ -46,21 +51,26 @@
             >Option 4</label
           ><br />
         </ul>
-        <details class="qbox__loesung">
+        <details class="quiz-card__loesung">
           <summary>The Right answers is</summary>
           <strong>Question 1:</strong> The correct answer is the
           <strong>Option 1</strong>.
         </details>
       </section>
 
-      <section class="qbox">
+      <section class="quiz-card">
         <div class="bookmark">
-          <img src="./images/bookmark.svg" alt="bookmark" width="30px" />
+          <img
+            src="./images/bookmark.svg"
+            alt="bookmark"
+            width="30"
+            height=""
+          />
         </div>
-        <p class="qbox__question">
+        <p class="quiz-card__question">
           2. Wie viel Gold kommt im menschlichen Körper vor?
         </p>
-        <ul class="qbox__answer">
+        <ul class="quiz-card_answer">
           <input type="radio" name="q1" value="a" id="q1a" />
           <label for="q1a">Option 1</label
           ><br />
@@ -74,16 +84,21 @@
             >Option 4</label
           ><br />
         </ul>
-        <details class="qbox__loesung">
+        <details class="quiz-card_loesung">
           <summary>The Right answers is</summary>
           <strong>Question 1:</strong> The correct answer is the
           <strong>Option 1</strong>.
         </details>
       </section>
 
-      <section class="qbox">
+      <section class="quiz-card>
         <div class="bookmark">
-          <img src="./images/bookmark.svg" alt="bookmark" width="30px" />
+          <img
+            src="./images/bookmark.svg"
+            alt="bookmark"
+            width="30"
+            height=""
+          />
         </div>
         <p class="qbox__question">
           1. Welche der Antworten ist keine echte Eissorte?
@@ -109,14 +124,19 @@
         </details>
       </section>
 
-      <section class="qbox">
+      <section class="quiz-card>
         <div class="bookmark">
-          <img src="./images/bookmark.svg" alt="bookmark" width="30px" />
+          <img
+            src="./images/bookmark.svg"
+            alt="bookmark"
+            width="30"
+            height=""
+          />
         </div>
-        <p class="qbox__question">
+        <p class="quiz-card__question">
           1. Welche der Antworten ist keine echte Eissorte?
         </p>
-        <ul class="qbox__answer">
+        <ul class="quiz-card__answer">
           <input type="radio" name="q1" value="a" id="q1a" />
           <label for="q1a">Zitrone-Basilikum</label
           ><br />
@@ -130,7 +150,7 @@
             >Option 4</label
           ><br />
         </ul>
-        <details class="qbox__loesung">
+        <details class="quiz-card__loesung">
           <summary>The Right answers is</summary>
           <strong>Question 1:</strong> The correct answer is the
           <strong>Option 1</strong>.
@@ -209,7 +229,11 @@
       /></a>
 
       <a href="#create"
-        ><img src="./images/createsmall.svg" width="30px" alt="create"
+        ><img
+          src="./images/createsmall.svg"
+          width="30px"
+          alt="create"
+          class="createicon"
       /></a>
 
       <a href="#profile"

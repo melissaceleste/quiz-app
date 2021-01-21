@@ -1,4 +1,4 @@
-.qbox {
+.quiz-card {
   border-radius: 40% 30% 20% 40%;
   background: #8fa8ac;
   border: solid 1px black;
@@ -7,13 +7,13 @@
   position: relative;
 }
 
-.qbox__question {
+.quiz-card__question {
   margin: 40px 20px 10px 20px;
   border: solid 1px black;
   font-weight: 400;
 }
 
-.qbox__results {
+.quiz-card__results {
   border-radius: 40% 30% 20% 40%;
   background: pink;
   border: solid 1px black;

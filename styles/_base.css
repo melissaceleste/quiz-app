@@ -9,6 +9,7 @@ body {
   margin: 0;
   text-align: center;
   font-family: 'Amatic SC', cursive;
+  background-image: './images/bg.jpeg';
 }
 
 header {
@@ -33,7 +34,7 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 input,
@@ -44,4 +45,9 @@ button {
 img {
   padding: 15px 0 15px 0;
   margin-bottom: 1px;
+}
+
+.active-icon {
+  filter: invert(95%) sepia(13%) saturate(612%) hue-rotate(57deg)
+    brightness(101%) contrast(95%);
 }
