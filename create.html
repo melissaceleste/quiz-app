@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="app-grid" class="create-main">
+    <header>
+      <h1>Quizzzle</h1>
+    </header>
+
+    <main class="app-grid__main" class="border">
+      <h2 class="underline">create your own question</h2>
+      <h4>let your creativity flow...</h4>
+
+      <div class="border">
+        <section qbox__question>
+          <h2>question</h2>
+          Write your own question: <br />
+          <input type="text" />
+        </section>
+
+        <section>
+          <h2>answers</h2>
+          Add four answer options: <br />
+
+          A) <input type="text" /> <br />
+          B) <input type="text" /> <br />
+          C) <input type="text" /> <br />
+          D) <input type="text" /> <br />
+        </section>
+
+        <section class="qbox__results">
+          <h2>solution</h2>
+          Tick the right answer: <br />
+
+          <ul class="quiz-card__answer">
+            <label for="q1a"> A) </label>
+            <input type="radio" name="q1" value="a" id="q1a" />
+            <br />
+            <label for="q1b"> B) </label>
+            <input type="radio" name="q1" value="b" id="q1b" />
+            <br />
+            <label for="q1c">C)</label>
+            <input type="radio" name="q1" value="c" id="q1c" />
+            <br />
+            <label for="q1d">D)</label>
+            <input type="radio" name="q1" value="d" id="q1d" />
+            <br />
+          </ul>
+        </section>
+      </div>
+      <section>
+        <h2>share it to the world</h2>
+        <img src="./images/boho-pfeil.png" width="125" height="" alt="home" />
+        <br />
+
+        <button class="submit-button">submit</button>
+      </section>
+    </main>
+
+    <nav class="navigation">
+      <a href="index.html"
+        ><img src="./images/home.svg" width="40" height="" alt="home"
+      /></a>
+
+      <a href="bookmarks.html"
+        ><img src="./images/bookmark.svg" width="22" height="" alt="bookmarks"
+      /></a>
+
+      <a href="create.html"
+        ><img
+          src="./images/edit.svg"
+          width="30"
+          height=""
+          alt="create"
+          class="active-icon"
+      /></a>
+
+      <a href="profile.html"
+        ><img
+          src="./images/figur.svg"
+          width="22"
+          height=""
+          alt="profile/Settings"
+      /></a>
+    </nav>
+  </body>
+</html>

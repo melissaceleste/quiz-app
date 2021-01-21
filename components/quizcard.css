@@ -13,6 +13,10 @@
   font-weight: 400;
 }
 
+.quiz-card__answer {
+  text-align: left;
+}
+
 .quiz-card__results {
   border-radius: 40% 30% 20% 40%;
   background: pink;
@@ -24,4 +28,32 @@
   right: 10px;
   background-color: transparent;
   border: none;
+  filter: invert(99%) sepia(1%) saturate(4927%) hue-rotate(50deg)
+    brightness(121%) contrast(91%);
+  xfilter: invert(71%) sepia(35%) saturate(5182%) hue-rotate(319deg)
+    brightness(88%) contrast(78%);
 }
+.animation-result {
+
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }

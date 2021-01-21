@@ -6,9 +6,10 @@ body {
   font-family: sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
-  margin: 0;
+  margin: 0px;
   text-align: center;
   font-family: 'Amatic SC', cursive;
+  overflow-y: hidden;
 }
 
 header {
@@ -30,10 +31,15 @@ h3 {
 
 h2 {
   font-size: 40px;
+  margin: 20px;
 }
 
 h3 {
   font-size: 20px;
+}
+
+h4 {
+  margin: 20px 20px 40px;
 }
 
 input,
@@ -47,6 +53,62 @@ img {
 }
 
 .active-icon {
-  filter: invert(95%) sepia(13%) saturate(612%) hue-rotate(57deg)
-    brightness(101%) contrast(95%);
+  filter: invert(99%) sepia(1%) saturate(4927%) hue-rotate(50deg)
+    brightness(121%) contrast(91%);
+  /*filter: invert(71%) sepia(35%) saturate(5182%) hue-rotate(319deg)
+    brightness(68%) contrast(78%);
+  filter: invert(36%) sepia(14%) saturate(727%) hue-rotate(149deg)
+    brightness(92%) contrast(90%);
+  filter: invert(91%) sepia(88%) saturate(189%) hue-rotate(174deg)
+    brightness(102%) contrast(99%);*/
+  xbox-shadow: 0px 8px 20px -11px #cb6960;
+}
+
+.border {
+  margin: 20px;
+}
+
+.submit-button {
+  margin: 0 0 20px;
+  box-shadow: 0 1.5px 5px;
+  background: transparent;
+  border-radius: 47% 53% 31% 69% / 40% 30% 70% 60%;
+  width: 150px;
+  height: 50px;
+  .pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
 }
