@@ -2,4 +2,5 @@
 @import '../components/app-grid.css';
 @import '../components/navigation.css';
 @import '../components/quizcard.css';
+@import '../components/submit-button.css';
 @import '_utilities.css';
