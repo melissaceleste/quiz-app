@@ -7,3 +7,32 @@
 .app-grid__main {
   overflow-y: scroll;
 }
+/* 
+.app-grid {
+  background-image: url('../images/bg.jpeg');
+  display: grid;
+  grid-template-rows: 81px auto 58px;
+  height: 100vh;
+}
+
+.app-grid__main {
+  overflow-y: scroll;
+  height: 100vh; /* 100% */
+
+/* .app-grid__content:-webkit-scrollbar {
+  display: none;
+}
+
+.app-grid__content > *:last-child::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 84px;
+}
+
+.app-grid__content > *:last-child {
+  position: relative;
+} */
