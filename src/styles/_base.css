@@ -3,6 +3,7 @@
 }
 
 body {
+  max-width: 500px;
   font-family: sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
@@ -15,7 +16,7 @@ body {
 
 header {
   background: #ede3d7;
-  margin: 0;
+  margin: 1px;
   padding-bottom: 40px;
   color: ivory;
   text-align: center;

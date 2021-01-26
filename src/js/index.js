@@ -1,6 +1,6 @@
 console.clear()
 
-const pagehome = document.querySelector('[data-js=pagedocument]')
+const pagehome = document.querySelector('[data-js=pagehome]')
 const pagebookmark = document.querySelector('[data-js=pagebookmark]')
 const pagecreate = document.querySelector('[data-js=pagecreate]')
 const pageprofile = document.querySelector('[data-js=pageprofile]')

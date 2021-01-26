@@ -8,7 +8,7 @@
 
 .app-grid__main {
   overflow-y: scroll;
-  height: 100vh;
+  height: 75vh;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
