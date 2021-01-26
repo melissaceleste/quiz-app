@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles/index.css" />
-    <script defer type="module" src="./js/index.js"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script defer type="module" src="./js/index.js"></script>
   </head>
   <body class="app-grid">
     <header>
       <h1>Quizzzle</h1>
     </header>
-
-    <section data-js="pagehome" class="page">
-      <!-- <div class="bookmark">
+    <main class="app-grid__main">
+      <section data-js="pagehome" class="page">
+        <!-- <div class="bookmark">
             <img src="images/bookmark.svg" alt="bookmark" width="50px" />
           </div> -->
 
-      <main class="app-grid__main">
         <section class="quiz-card">
           <button class="bookmark">
             <img
@@ -180,11 +180,9 @@
               <strong>Option 1</strong>.
             </details>
             -->
-      </main>
-    </section>
+      </section>
 
-    <section data-js="pagebookmark" class="page hidden">
-      <main class="app-grid__main">
+      <section data-js="pagebookmark" class="page hidden">
         <h2 class="underline">
           Your bookmarks
           <img
@@ -287,11 +285,9 @@
           <strong>Question 1:</strong> The correct answer is the
           <strong>Option 1</strong>.
         </details>
-      </main>
-    </section>
+      </section>
 
-    <section data-js="pagecreate" class="page hidden">
-      <main class="app-grid__main" class="border">
+      <section data-js="pagecreate" class="page hidden">
         <h2 class="underline">create your own question</h2>
         <h4>let your creativity flow...</h4>
 
@@ -339,53 +335,44 @@
 
           <button class="submit-button">submit</button>
         </section>
-      </main>
-    </section>
+      </section>
 
-    <section data-js="pageprofile" class="page hidden">
-      <main class="app-grid__main" class="border">
+      <section data-js="pageprofile" class="page hidden">
         hier kommt das profil...
-      </main>
-    </section>
-
+      </section>
+    </main>
     <nav class="navigation">
-      <a href="index.html"
-        ><img
-          src="./images/home.svg"
-          width="40"
-          alt="home"
-          height=""
-          class="active-icon"
-          data-js="iconhome"
-      /></a>
+      <img
+        src="./images/home.svg"
+        width="40"
+        alt="home"
+        height=""
+        class="active-icon"
+      />
 
-      <a href="bookmarks.html"
-        ><img
-          src="./images/bookmark.svg"
-          width="22"
-          alt="bookmarks"
-          height=""
-          data-js="iconbookmark"
-      /></a>
+      <img
+        src="./images/bookmark.svg"
+        width="22"
+        alt="bookmarks"
+        height=""
+        data-js="iconbookmark"
+      />
 
-      <a href="create.html"
-        ><img
-          s
-          rc="./images/edit.svg"
-          width="30"
-          height=""
-          alt="create"
-          data-js="iconreate"
-      /></a>
+      <img
+        src="./images/edit.svg"
+        width="30"
+        height=""
+        alt="create"
+        data-js="iconreate"
+      />
 
-      <a href="profile.html"
-        ><img
-          src="./images/figur.svg"
-          width="22"
-          height=""
-          alt="profile/Settings"
-          data-js="iconprofile"
-      /></a>
+      <img
+        src="./images/figur.svg"
+        width="22"
+        height=""
+        alt="profile/Settings"
+        data-js="iconprofile"
+      />
     </nav>
   </body>
 </html>

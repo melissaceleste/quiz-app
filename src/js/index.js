@@ -1,4 +1,4 @@
-console.log('hello world')
+console.clear()
 
 const pagehome = document.querySelector('[data-js=pagedocument]')
 const pagebookmark = document.querySelector('[data-js=pagebookmark]')
@@ -10,12 +10,16 @@ const iconbookmark = document.querySelector('[data-js=iconbookmark]')
 const iconcreate = document.querySelector('[data-js=iconreate]')
 const iconprofile = document.querySelector('[data-js=iconprofile]')
 
-iconhome.addEventListener('click', () => {
-  pagehome.classList
-    .remove('hidden')
-    [(pagebookmark, pagecreate, pageprofile)].forEach(page => {
-      page.classList.add('hidden')
-    })
+/* iconhome.addEventListener('click', () => {
+  pagehome.classList.remove('hidden')
+  pagebookmark.classList.add('hidden')
+  pagecreate.classList.add('hidden')
+  pageprofile.classList.add('hidden')
+
+  iconhome.classList.add('active-icon')
+  iconbookmark.classList.remove('active-icon')
+  iconcreate.classList.remove('active-icon')
+  iconprofile.classList.remove('active-icon')
 })
 
 iconbookmark.addEventListener('click', () => {
@@ -23,6 +27,11 @@ iconbookmark.addEventListener('click', () => {
   pagebookmark.classList.remove('hidden')
   pagecreate.classList.add('hidden')
   pageprofile.classList.add('hidden')
+
+  iconhome.classList.remove('active-icon')
+  iconbookmark.classList.add('active-icon')
+  iconcreate.classList.remove('active-icon')
+  iconprofile.classList.remove('active-icon')
 })
 
 iconcreate.addEventListener('click', () => {
@@ -30,6 +39,11 @@ iconcreate.addEventListener('click', () => {
   pagebookmark.classList.add('hidden')
   pagecreate.classList.remove('hidden')
   pageprofile.classList.add('hidden')
+
+  iconhome.classList.remove('active-icon')
+  iconbookmark.classList.remove('active-icon')
+  iconcreate.classList.add('active-icon')
+  iconprofile.classList.remove('active-icon')
 })
 
 iconprofile.addEventListener('click', () => {
@@ -37,4 +51,57 @@ iconprofile.addEventListener('click', () => {
   pagebookmark.classList.add('hidden')
   pagecreate.classList.add('hidden')
   pageprofile.classList.remove('hidden')
+
+  iconhome.classList.remove('active-icon')
+  iconbookmark.classList.remove('active-icon')
+  iconcreate.classList.remove('active-icon')
+  iconprofile.classList.add('active-icon')
+}) */
+
+iconhome.addEventListener('click', () => {
+  pagehome.hidden = false
+  pagebookmark.hidden = true
+  pagecreate.hidden = true // Boolean: true or false
+  pageprofile.hidden = true
+
+  iconhome.classList.add('active-icon')
+  iconbookmark.classList.remove('active-icon')
+  iconcreate.classList.remove('active-icon')
+  iconprofile.classList.remove('active-icon')
+})
+
+iconbookmark.addEventListener('click', () => {
+  pagehome.hidden = true
+  pagebookmark.hidden = false
+  pagecreate.hidden = true // Boolean: true or false
+  pageprofile.hidden = true
+
+  iconhome.classList.remove('active-icon')
+  iconbookmark.classList.add('active-icon')
+  iconcreate.classList.remove('active-icon')
+  iconprofile.classList.remove('active-icon')
+})
+
+iconcreate.addEventListener('click', () => {
+  pagehome.hidden = true
+  pagebookmark.hidden = true
+  pagecreate.hidden = false // Boolean: true or false
+  pageprofile.hidden = true
+
+  iconhome.classList.remove('active-icon')
+  iconbookmark.classList.remove('active-icon')
+  iconcreate.classList.add('active-icon')
+  iconprofile.classList.remove('active-icon')
+})
+
+iconprofile.addEventListener('click', () => {
+  pagehome.hidden = true
+  pagebookmark.hidden = true
+  pagecreate.hidden = true // Boolean: true or false
+  pageprofile.hidden = false
+
+  iconhome.classList.remove('active-icon')
+  iconbookmark.classList.remove('active-icon')
+  iconcreate.classList.remove('active-icon')
+  iconprofile.classList.add('active-icon')
 })
