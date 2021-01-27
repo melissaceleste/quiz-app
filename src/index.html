@@ -5,207 +5,351 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles/index.css" />
-    <script defer type="module" src="./js/index.js"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script defer type="module" src="./js/index.js"></script>
   </head>
   <body class="app-grid">
     <header>
       <h1>Quizzzle</h1>
     </header>
-
-    <!-- <div class="bookmark">
+    <main class="app-grid__main">
+      <section data-js="pagehome">
+        <!-- <div class="bookmark">
             <img src="images/bookmark.svg" alt="bookmark" width="50px" />
           </div> -->
 
-    <main class="app-grid__main">
-      <section class="quiz-card">
-        <button class="bookmark">
+        <section class="quiz-card">
+          <button class="bookmark">
+            <img
+              src="./images/bookmark.svg"
+              alt="bookmark"
+              width="30"
+              height=""
+            />
+          </button>
+          <p class="quiz-card__question">
+            Welche der Antworten ist keine echte Eissorte?
+          </p>
+          <ul class="quiz-card__answer">
+            <input type="radio" name="q1" value="a" id="q1a" />
+            <label for="q1a">Schlumpf</label
+            ><br />
+            <input type="radio" name="q1" value="b" id="q1b" /><label for="q1b"
+              >Gurkensalat</label
+            ><br />
+            <input type="radio" name="q1" value="c" id="q1c" /><label for="q1c"
+              >Avocado</label
+            ><br />
+            <input type="radio" name="q1" value="d" id="q1d" /><label for="q1d"
+              >Tomate-Morzarella</label
+            ><br />
+          </ul>
+          <details class="quiz-card__loesung">
+            <summary>The Right answers is</summary>
+            <strong>Question 1:</strong> The correct answer is the
+            <strong>Tomete-Morzarella!</strong>.
+          </details>
+        </section>
+
+        <section class="quiz-card">
+          <button class="bookmark">
+            <img
+              src="./images/bookmark.svg"
+              alt="bookmark"
+              width="30"
+              height=""
+            />
+          </button>
+          <p class="quiz-card__question">
+            Wie viel Gold kommt im menschlichen Körper vor?
+          </p>
+          <ul class="quiz-card__answer">
+            <input type="radio" name="q1" value="a" id="q1a" />
+            <label for="q1a">20 Miligramm</label
+            ><br />
+            <input type="radio" name="q1" value="b" id="q1b" /><label for="q1b"
+              >keines</label
+            ><br />
+            <input type="radio" name="q1" value="c" id="q1c" /><label for="q1c"
+              >0,2 Gramm</label
+            ><br />
+            <input type="radio" name="q1" value="d" id="q1d" /><label for="q1d"
+              >11 Gramm</label
+            ><br />
+          </ul>
+          <details class="quiz-card__loesung">
+            <summary>The Right answers is</summary>
+            <strong>Question 1:</strong> The correct answer is the
+            <strong class="animation-result">0,2 Gramm!</strong>.
+          </details>
+        </section>
+
+        <section class="quiz-card">
+          <button class="bookmark">
+            <img
+              src="./images/bookmark.svg"
+              alt="bookmark"
+              width="30"
+              height=""
+            />
+          </button>
+          <p class="quiz-card__question">
+            Was können Babys nur in den ersten drei Monaten?
+          </p>
+          <ul class="quiz-card__answer">
+            <input type="radio" name="q1" value="a" id="q1a" />
+            <label for="q1a">Mit den Füßen an die Nasenspitze tippen</label
+            ><br />
+            <input type="radio" name="q1" value="b" id="q1b" /><label for="q1b"
+              >Besonders gut hören</label
+            ><br />
+            <input type="radio" name="q1" value="c" id="q1c" /><label for="q1c"
+              >Gleichzeitig Schlucken und Atmen</label
+            ><br />
+            <input type="radio" name="q1" value="d" id="q1d" /><label for="q1d"
+              >Ihre Mutter am Geruch erkennen</label
+            ><br />
+          </ul>
+          <details class="quiz-card_loesung">
+            <summary>The Right answers is</summary>
+            <strong>Question 1:</strong> The correct answer is the
+            <strong>Gleichzeitig Schlucken und Atmen</strong>.
+          </details>
+        </section>
+
+        <section class="quiz-card">
+          <button class="bookmark">
+            <img
+              src="./images/bookmark.svg"
+              alt="bookmark"
+              width="30"
+              height=""
+            />
+          </button>
+          <p class="quiz-card__question">
+            In Äthiopien gibt es kein bestimmtes Datum für den Muttertag. Es
+            wird gefeiert, wenn..
+          </p>
+          <ul class="quiz-card__answer">
+            <input type="radio" name="q1" value="a" id="q1a" />
+            <label for="q1a">..der Fluss über die Ufer tritt.</label
+            ><br />
+            <input type="radio" name="q1" value="b" id="q1b" /><label for="q1b"
+              >..im Mai Vollmond ist.</label
+            ><br />
+            <input type="radio" name="q1" value="c" id="q1c" /><label for="q1c"
+              >..das Getreide geerntet wird.</label
+            ><br />
+            <input type="radio" name="q1" value="d" id="q1d" /><label for="q1d"
+              >..der erste Regen fällt.</label
+            ><br />
+          </ul>
+          <details class="quiz-card__loesung">
+            <summary>The Right answers is</summary>
+            <strong>Question 1:</strong> The correct answer is the
+            <strong>..der erste Regen fällt.</strong>.
+          </details>
+        </section>
+      </section>
+
+      <section hidden data-js="pagebookmark">
+        <h2 class="underline">
+          Your bookmarks
           <img
-            src="./images/bookmark.svg"
+            src="./images/bookmarks.svg"
             alt="bookmark"
             width="30"
             height=""
           />
-        </button>
-        <p class="quiz-card__question">
-          Welche der Antworten ist keine echte Eissorte?
-        </p>
-        <ul class="quiz-card__answer">
-          <input type="radio" name="q1" value="a" id="q1a" />
-          <label for="q1a">Schlumpf</label
-          ><br />
-          <input type="radio" name="q1" value="b" id="q1b" /><label for="q1b"
-            >Gurkensalat</label
-          ><br />
-          <input type="radio" name="q1" value="c" id="q1c" /><label for="q1c"
-            >Avocado</label
-          ><br />
-          <input type="radio" name="q1" value="d" id="q1d" /><label for="q1d"
-            >Tomate-Morzarella</label
-          ><br />
-        </ul>
-        <details class="quiz-card__loesung">
-          <summary>The Right answers is</summary>
+        </h2>
+
+        <details class="quiz-card">
+          <button class="bookmark">
+            <img
+              src="./images/bookmark.svg"
+              alt="bookmark"
+              width="30"
+              height=""
+            />
+          </button>
+          <summary class="quiz-card__question">
+            1. Welche der Antworten ist keine echte Eissorte?
+          </summary>
+          <ul class="quiz-card__answer">
+            <input type="radio" name="q1" value="a" id="q1a" />
+            <label for="q1a">Option 1</label
+            ><br />
+            <input type="radio" name="q1" value="b" id="q1b" /><label for="q1b"
+              >Option 2</label
+            ><br />
+            <input type="radio" name="q1" value="c" id="q1c" /><label for="q1c"
+              >Option 3</label
+            ><br />
+            <input type="radio" name="q1" value="d" id="q1d" /><label for="q1d"
+              >Option 4</label
+            ><br />
+          </ul>
+          <h3 id="quiz-card__results">The Right answers is</h3>
           <strong>Question 1:</strong> The correct answer is the
-          <strong>Tomete-Morzarella!</strong>.
+          <strong>Option 1</strong>.
+        </details>
+
+        <details class="quiz-card">
+          <button class="bookmark">
+            <img
+              src="./images/bookmark.svg"
+              alt="bookmark"
+              width="30"
+              height=""
+            />
+          </button>
+          <summary class="quiz-card__question">
+            1. Welche der Antworten ist keine echte Eissorte?
+          </summary>
+          <ul class="quiz-card__answer">
+            <input type="radio" name="q1" value="a" id="q1a" />
+            <label for="q1a">Option 1</label
+            ><br />
+            <input type="radio" name="q1" value="b" id="q1b" /><label for="q1b"
+              >Option 2</label
+            ><br />
+            <input type="radio" name="q1" value="c" id="q1c" /><label for="q1c"
+              >Option 3</label
+            ><br />
+            <input type="radio" name="q1" value="d" id="q1d" /><label for="q1d"
+              >Option 4</label
+            ><br />
+          </ul>
+          <h3 id="quiz-card__results">The Right answers is</h3>
+          <strong>Question 1:</strong> The correct answer is the
+          <strong>Option 1</strong>.
+        </details>
+
+        <details class="quiz-card">
+          <button class="bookmark">
+            <img
+              src="./images/bookmark.svg"
+              alt="bookmark"
+              width="30"
+              height=""
+            />
+          </button>
+          <summary class="quiz-card__question">
+            1. Welche der Antworten ist keine echte Eissorte?
+          </summary>
+          <ul class="quiz-card__answer">
+            <input type="radio" name="q1" value="a" id="q1a" />
+            <label for="q1a">Option 1</label
+            ><br />
+            <input type="radio" name="q1" value="b" id="q1b" /><label for="q1b"
+              >Option 2</label
+            ><br />
+            <input type="radio" name="q1" value="c" id="q1c" /><label for="q1c"
+              >Option 3</label
+            ><br />
+            <input type="radio" name="q1" value="d" id="q1d" /><label for="q1d"
+              >Option 4</label
+            ><br />
+          </ul>
+          <h3 id="quiz-card__results">The Right answers is</h3>
+          <strong>Question 1:</strong> The correct answer is the
+          <strong>Option 1</strong>.
         </details>
       </section>
 
-      <section class="quiz-card">
-        <button class="bookmark">
-          <img
-            src="./images/bookmark.svg"
-            alt="bookmark"
-            width="30"
-            height=""
-          />
-        </button>
-        <p class="quiz-card__question">
-          Wie viel Gold kommt im menschlichen Körper vor?
-        </p>
-        <ul class="quiz-card__answer">
-          <input type="radio" name="q1" value="a" id="q1a" />
-          <label for="q1a">20 Miligramm</label
-          ><br />
-          <input type="radio" name="q1" value="b" id="q1b" /><label for="q1b"
-            >keines</label
-          ><br />
-          <input type="radio" name="q1" value="c" id="q1c" /><label for="q1c"
-            >0,2 Gramm</label
-          ><br />
-          <input type="radio" name="q1" value="d" id="q1d" /><label for="q1d"
-            >11 Gramm</label
-          ><br />
-        </ul>
-        <details class="quiz-card__loesung">
-          <summary>The Right answers is</summary>
-          <strong>Question 1:</strong> The correct answer is the
-          <strong class="animation-result">0,2 Gramm!</strong>.
-        </details>
+      <section hidden data-js="pagecreate">
+        <h2 class="underline">create your own question</h2>
+        <h4>let your creativity flow...</h4>
+
+        <div class="border">
+          <section qbox__question>
+            <h2>question</h2>
+            <label for="question"> Write your own question: </label> <br />
+            <input id="question" type="text" />
+          </section>
+
+          <section>
+            <h2>answers</h2>
+            <label for="answers"> Add four answer options:</label> <br />
+
+            A) <input id="answers" type="text" /> <br />
+            B) <input type="text" /> <br />
+            C) <input type="text" /> <br />
+            D) <input type="text" /> <br />
+          </section>
+
+          <section class="qbox__results">
+            <h2>solution</h2>
+            Tick the right answer: <br />
+
+            <ul class="quiz-card__answer">
+              <label for="q1a"> A) </label>
+              <input type="radio" name="q1" value="a" id="q1a" />
+              <br />
+              <label for="q1b"> B) </label>
+              <input type="radio" name="q1" value="b" id="q1b" />
+              <br />
+              <label for="q1c">C)</label>
+              <input type="radio" name="q1" value="c" id="q1c" />
+              <br />
+              <label for="q1d">D)</label>
+              <input type="radio" name="q1" value="d" id="q1d" />
+              <br />
+            </ul>
+          </section>
+        </div>
+        <section>
+          <h2>share it to the world</h2>
+          <img src="./images/boho-pfeil.png" width="125" height="" alt="home" />
+          <br />
+
+          <button data-js="submitbutton" class="submit-button">submit</button>
+          <div hidden data-js="submittext" class="submitbuttontext">
+            Great! Your question is now ready for the world.
+          </div>
+        </section>
       </section>
 
-      <section class="quiz-card">
-        <button class="bookmark">
-          <img
-            src="./images/bookmark.svg"
-            alt="bookmark"
-            width="30"
-            height=""
-          />
-        </button>
-        <p class="quiz-card__question">
-          Was können Babys nur in den ersten drei Monaten?
-        </p>
-        <ul class="quiz-card__answer">
-          <input type="radio" name="q1" value="a" id="q1a" />
-          <label for="q1a">Mit den Füßen an die Nasenspitze tippen</label
-          ><br />
-          <input type="radio" name="q1" value="b" id="q1b" /><label for="q1b"
-            >Besonders gut hören</label
-          ><br />
-          <input type="radio" name="q1" value="c" id="q1c" /><label for="q1c"
-            >Gleichzeitig Schlucken und Atmen</label
-          ><br />
-          <input type="radio" name="q1" value="d" id="q1d" /><label for="q1d"
-            >Ihre Mutter am Geruch erkennen</label
-          ><br />
-        </ul>
-        <details class="quiz-card_loesung">
-          <summary>The Right answers is</summary>
-          <strong>Question 1:</strong> The correct answer is the
-          <strong>Gleichzeitig Schlucken und Atmen</strong>.
-        </details>
-      </section>
-
-      <section class="quiz-card">
-        <button class="bookmark">
-          <img
-            src="./images/bookmark.svg"
-            alt="bookmark"
-            width="30"
-            height=""
-          />
-        </button>
-        <p class="quiz-card__question">
-          In Äthiopien gibt es kein bestimmtes Datum für den Muttertag. Es wird
-          gefeiert, wenn..
-        </p>
-        <ul class="quiz-card__answer">
-          <input type="radio" name="q1" value="a" id="q1a" />
-          <label for="q1a">..der Fluss über die Ufer tritt.</label
-          ><br />
-          <input type="radio" name="q1" value="b" id="q1b" /><label for="q1b"
-            >..im Mai Vollmond ist.</label
-          ><br />
-          <input type="radio" name="q1" value="c" id="q1c" /><label for="q1c"
-            >..das Getreide geerntet wird.</label
-          ><br />
-          <input type="radio" name="q1" value="d" id="q1d" /><label for="q1d"
-            >..der erste Regen fällt.</label
-          ><br />
-        </ul>
-        <details class="quiz-card__loesung">
-          <summary>The Right answers is</summary>
-          <strong>Question 1:</strong> The correct answer is the
-          <strong>..der erste Regen fällt.</strong>.
-        </details>
-      </section>
-
-      <!-- 
-      <details class="qbox">
-        <summary class="qbox__question">
-          1. Welche der Antworten ist keine echte Eissorte?
-        </summary>
-        <ul class="qbox__answer">
-          <input type="radio" name="q1" value="a" id="q1a" />
-          <label for="q1a">Option 1</label
-          ><br />
-          <input type="radio" name="q1" value="b" id="q1b" /><label for="q1b"
-            >Option 2</label
-          ><br />
-          <input type="radio" name="q1" value="c" id="q1c" /><label for="q1c"
-            >Option 3</label
-          ><br />
-          <input type="radio" name="q1" value="d" id="q1d" /><label for="q1d"
-            >Option 4</label
-          ><br />
-        </ul>
-        <div id="qbox__results">The Right answers is</div>
-        <strong>Question 1:</strong> The correct answer is the
-        <strong>Option 1</strong>.
-      </details>
-      -->
+      <section hidden data-js="pageprofile">hier kommt das profil...</section>
     </main>
-
     <nav class="navigation">
-      <a href="index.html"
-        ><img
-          src="./images/home.svg"
-          width="40"
-          alt="home"
-          height=""
-          class="active-icon"
-      /></a>
+      <img
+        src="./images/home.svg"
+        width="40"
+        alt="home"
+        height=""
+        class="active-icon"
+        data-js="iconhome"
+      />
 
-      <a href="bookmarks.html"
-        ><img src="./images/bookmark.svg" width="22" alt="bookmarks" height=""
-      /></a>
+      <img
+        src="./images/bookmark.svg"
+        width="22"
+        alt="bookmarks"
+        height=""
+        data-js="iconbookmark"
+      />
 
-      <a href="create.html"
-        ><img src="./images/edit.svg" width="30" height="" alt="create"
-      /></a>
+      <img
+        src="./images/edit.svg"
+        width="30"
+        height=""
+        alt="create"
+        data-js="iconreate"
+      />
 
-      <a href="profile.html"
-        ><img
-          src="./images/figur.svg"
-          width="22"
-          height=""
-          alt="profile/Settings"
-      /></a>
+      <img
+        src="./images/figur.svg"
+        width="22"
+        height=""
+        alt="profile/Settings"
+        data-js="iconprofile"
+      />
     </nav>
   </body>
 </html>

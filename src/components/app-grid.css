@@ -1,38 +1,14 @@
 .app-grid {
+  background-image: url('../images/bg.jpeg');
   display: grid;
   grid-template-rows: 100px auto 70px;
   height: 100vh;
-  background-image: url('../images/bg.jpeg');
-}
-.app-grid__main {
-  overflow-y: scroll;
-}
-/* 
-.app-grid {
-  background-image: url('../images/bg.jpeg');
-  display: grid;
-  grid-template-rows: 81px auto 58px;
-  height: 100vh;
+  margin: 0 auto;
 }
 
 .app-grid__main {
   overflow-y: scroll;
-  height: 100vh; /* 100% */
-
-/* .app-grid__content:-webkit-scrollbar {
-  display: none;
+  height: 75vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-
-.app-grid__content > *:last-child::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 84px;
-}
-
-.app-grid__content > *:last-child {
-  position: relative;
-} */
