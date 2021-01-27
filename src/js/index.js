@@ -105,3 +105,10 @@ iconprofile.addEventListener('click', () => {
   iconcreate.classList.remove('active-icon')
   iconprofile.classList.add('active-icon')
 })
+
+const submittext = document.querySelector('[data-js=submittext]')
+const submitbutton = document.querySelector('[data-js=submitbutton]')
+
+submitbutton.addEventListener('click', () => {
+  submittext.hidden = false
+})
