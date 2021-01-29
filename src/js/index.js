@@ -16,18 +16,11 @@ const activeBookmarkIcons = document.querySelectorAll(
 )
 
 const cards = document.querySelectorAll('[data-js="card"]')
-/* const buttonShowAnswer = document.querySelector(
-  '[data-js="buttonShowAnswer"]'
-)
-const answer = document.querySelector('[data-js="answer"]') */
-
+const formContainer = document.querySelector('[data-js="formContainer"]')
+const focusedInput = document.querySelector('[data-js="focusedInput"]')
+const formCards = formContainer.querySelectorAll('[data-js="formCard"]')
 const submitButton = document.querySelector('[data-js="submitButton"]')
 const submitText = document.querySelector('[data-js="submitText"]')
-
-const form = document.querySelector('[data-js="form"]')
-const inputQuestion = document.querySelector('[data-js="inputQuestion"]')
-
-const counter = document.querySelector('[data-js="counter"]')
 
 iconhome.addEventListener('click', () => {
   pagehome.hidden = false
@@ -92,15 +85,19 @@ cards.forEach(card => {
   })
 })
 
-form.addEventListener('submit', event => {
+formContainer.addEventListener('submit', event => {
   event.preventDefault()
-  form.reset()
-  inputQuestion.focus()
+  formContainer.reset()
 })
 
-inputQuestion.addEventListener('input', () => {
-  const textLength = inputQuestion.value.length
-  counter.innerHTML = 100 - textLength
+formCards.forEach(formCard => {
+  const formInput = formCard.querySelector('[data-js="formInput"]')
+  const counter = formCard.querySelector('[data-js="counter"]')
+
+  formInput.addEventListener('input', () => {
+    const textLength = formInput.value.length
+    counter.innerHTML = formInput.maxLength - textLength
+  })
 })
 
 submitButton.addEventListener('click', () => {
@@ -157,3 +154,9 @@ iconprofile.addEventListener('click', () => {
   iconcreate.classList.remove('active-icon')
   iconprofile.classList.add('active-icon')
 }) */
+
+/* inputQuestion.addEventListener('input', () => {
+  const textLength = inputQuestion.value.length
+  counter.innerHTML = 100 - textLength
+})
+ */

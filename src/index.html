@@ -283,24 +283,24 @@
       <section hidden data-js="pagecreate">
         <h2 class="underline">create your own question</h2>
         <h4>let your creativity flow...</h4>
-        <form data-js="form">
+        <form data-js="formContainer">
         <div class="border">
-          <section qbox__question>
+          <section qbox__question data-js="formCard">
             <h2>question</h2>
             <label for="question"> Write your own question: </label> <br />
             <span data-js="counter"> 100</span>
-            <textarea id="question" type="text" rows="2" cols="40" maxlength="100" data-js="inputQuestion"> </textarea>
+            <textarea id="question" type="text" rows="2" cols="40" maxlength="100" data-js="formInput"> </textarea>
             
           </section>
 
-          <section>
+          <section data-js="formCard">
             <h2>answers</h2>
             <label for="answers"> Add four answer options:</label> <br />
 
-            A) <input id="answers" type="text" /> <br />
-            B) <input type="text" /> <br />
-            C) <input type="text" /> <br />
-            D) <input type="text" /> <br />
+            A)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" id="answers" type="text" >  </textarea> <br />
+            B)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" type="text" >  </textarea><br />
+            C)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" type="text" >  </textarea><br />
+            D)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" type="text" > </textarea><br />
           </section>
 
           <section class="qbox__results">
