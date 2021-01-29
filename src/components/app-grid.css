@@ -1,5 +1,5 @@
 .app-grid {
-  background-image: url('../images/bg.jpeg');
+  background-image: url('../images/bgg.jpg');
   display: grid;
   grid-template-rows: 100px auto 70px;
   height: 100vh;

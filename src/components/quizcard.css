@@ -3,6 +3,7 @@
   background: #8fa8ac;
   border: solid 1px black;
   margin: 60px 40px 60px 40px;
+  xpadding: 20px;
   box-shadow: 0 1.5px 5px;
   position: relative;
 }
@@ -17,23 +18,22 @@
   text-align: left;
 }
 
-.quiz-card__results {
+.quiz-card__loesung {
+  font-family: 'Amatic SC', cursive;
+  margin: 0 0 20px;
+  box-shadow: 0 1.5px 5px;
+  background: transparent;
+  border-radius: 76% 24% 64% 36% / 54% 41% 59% 46%;
+  width: 150px;
+  height: 50px;
+}
+
+/* .quiz-card__results {
   border-radius: 40% 30% 20% 40%;
   background: pink;
   border: solid 1px black;
-}
-.bookmark {
-  position: absolute;
-  top: -10px;
-  right: 10px;
-  background-color: transparent;
-  border: none;
-  filter: invert(99%) sepia(1%) saturate(4927%) hue-rotate(50deg)
-    brightness(121%) contrast(91%);
-  /* filter: invert(71%) sepia(35%) saturate(5182%) hue-rotate(319deg)
-    brightness(88%) contrast(78%);
- */
-}
+} */
+
 .animation-result {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -57,4 +57,22 @@
   100% {
     opacity: 1;
   }
+}
+
+.bookmark {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  filter: invert(99%) sepia(1%) saturate(4927%) hue-rotate(50deg)
+    brightness(121%) contrast(91%);
+  /* filter: invert(71%) sepia(35%) saturate(5182%) hue-rotate(319deg)
+    brightness(88%) contrast(78%);
+ */
+}
+
+.activebookmark {
+  filter: invert(96%) sepia(36%) saturate(6615%) hue-rotate(169deg)
+    brightness(118%) contrast(101%);
 }
