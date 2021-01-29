@@ -21,11 +21,13 @@ const cards = document.querySelectorAll('[data-js="card"]')
 )
 const answer = document.querySelector('[data-js="answer"]') */
 
-const submitButton = document.querySelector('[data-js=submitButton]')
-const submitText = document.querySelector('[data-js=submitText]')
+const submitButton = document.querySelector('[data-js="submitButton"]')
+const submitText = document.querySelector('[data-js="submitText"]')
 
-const form = document.querySelector('[data-js=form')
-const inputQuestion = document.querySelector('[data-js=inputQuestion')
+const form = document.querySelector('[data-js="form"]')
+const inputQuestion = document.querySelector('[data-js="inputQuestion"]')
+
+const counter = document.querySelector('[data-js="counter"]')
 
 iconhome.addEventListener('click', () => {
   pagehome.hidden = false
@@ -90,11 +92,15 @@ cards.forEach(card => {
   })
 })
 
-submitButton.addEventListener('submit')(event => {
+form.addEventListener('submit', event => {
   event.preventDefault()
-  console.log(event)
   form.reset()
   inputQuestion.focus()
+})
+
+inputQuestion.addEventListener('input', () => {
+  const textLength = inputQuestion.value.length
+  counter.innerHTML = 100 - textLength
 })
 
 submitButton.addEventListener('click', () => {

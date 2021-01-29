@@ -283,12 +283,14 @@
       <section hidden data-js="pagecreate">
         <h2 class="underline">create your own question</h2>
         <h4>let your creativity flow...</h4>
-        <form data-js="form" onKeypress="zaehlen()" onKeydown="zaehlen()">
+        <form data-js="form">
         <div class="border">
           <section qbox__question>
             <h2>question</h2>
             <label for="question"> Write your own question: </label> <br />
-            <input id="question" type="text" data-js="inputQuestion" />
+            <span data-js="counter"> 100</span>
+            <textarea id="question" type="text" rows="2" cols="40" maxlength="100" data-js="inputQuestion"> </textarea>
+            
           </section>
 
           <section>
