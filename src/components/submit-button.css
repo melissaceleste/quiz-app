@@ -5,8 +5,9 @@
   border-radius: 47% 53% 31% 69% / 40% 30% 70% 60%;
   width: 150px;
   height: 50px;
+  font-family: 'Amatic SC', cursive;
 }
 
-.shareIt {
+.share-it {
   margin-bottom: 40px;
 }

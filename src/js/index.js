@@ -88,6 +88,7 @@ cards.forEach(card => {
 formContainer.addEventListener('submit', event => {
   event.preventDefault()
   formContainer.reset()
+  submitText.hidden = false
 })
 
 formCards.forEach(formCard => {
@@ -100,63 +101,6 @@ formCards.forEach(formCard => {
   })
 })
 
-submitButton.addEventListener('click', () => {
-  submitText.hidden = false
-})
-
 function getElement(dataJsName) {
   return document.querySelector(`[data-js="${dataJsName}"]`)
 }
-/* iconhome.addEventListener('click', () => {
-  pagehome.classList.remove('hidden')
-  pagebookmark.classList.add('hidden')
-  pagecreate.classList.add('hidden')
-  pageprofile.classList.add('hidden')
-
-  iconhome.classList.add('active-icon')
-  iconbookmark.classList.remove('active-icon')
-  iconcreate.classList.remove('active-icon')
-  iconprofile.classList.remove('active-icon')
-})
-
-iconbookmark.addEventListener('click', () => {
-  pagehome.classList.add('hidden')
-  pagebookmark.classList.remove('hidden')
-  pagecreate.classList.add('hidden')
-  pageprofile.classList.add('hidden')
-
-  iconhome.classList.remove('active-icon')
-  iconbookmark.classList.add('active-icon')
-  iconcreate.classList.remove('active-icon')
-  iconprofile.classList.remove('active-icon')
-})
-
-iconcreate.addEventListener('click', () => {
-  pagehome.classList.add('hidden')
-  pagebookmark.classList.add('hidden')
-  pagecreate.classList.remove('hidden')
-  pageprofile.classList.add('hidden')
-
-  iconhome.classList.remove('active-icon')
-  iconbookmark.classList.remove('active-icon')
-  iconcreate.classList.add('active-icon')
-  iconprofile.classList.remove('active-icon')
-})
-
-iconprofile.addEventListener('click', () => {
-  pagehome.classList.add('hidden')
-  pagebookmark.classList.add('hidden')
-  pagecreate.classList.add('hidden')
-  pageprofile.classList.remove('hidden')
-
-  iconhome.classList.remove('active-icon')
-  iconbookmark.classList.remove('active-icon')
-  iconcreate.classList.remove('active-icon')
-  iconprofile.classList.add('active-icon')
-}) */
-
-/* inputQuestion.addEventListener('input', () => {
-  const textLength = inputQuestion.value.length
-  counter.innerHTML = 100 - textLength
-})
- */

@@ -46,7 +46,7 @@
               >Tomate-Morzarella</label
             ><br />
           </ul>
-          <button class="quiz-card__loesung" data-js="buttonShowAnswer">
+          <button class="quiz-card__result" data-js="buttonShowAnswer">
             The Right answers is
           </button>
           <div class="hidden" data-js="answer">
@@ -82,7 +82,7 @@
               >11 Gramm</label
             ><br />
           </ul>
-          <button class="quiz-card__loesung" data-js="buttonShowAnswer">
+          <button class="quiz-card__result" data-js="buttonShowAnswer">
             The Right answers is
           </button>
           <div class="hidden" data-js="answer">
@@ -118,7 +118,7 @@
               >Ihre Mutter am Geruch erkennen</label
             ><br />
           </ul>
-          <button class="quiz-card__loesung" data-js="buttonShowAnswer">
+          <button class="quiz-card__result" data-js="buttonShowAnswer">
             The Right answers is
           </button>
           <div class="hidden" data-js="answer">
@@ -155,7 +155,7 @@
               >..der erste Regen fällt.</label
             ><br />
           </ul>
-          <button class="quiz-card__loesung" data-js="buttonShowAnswer">
+          <button class="quiz-card__result" data-js="buttonShowAnswer">
             The Right answers is
           </button>
           <div class="hidden" data-js="answer">
@@ -297,17 +297,17 @@
             <h2>answers</h2>
             <label for="answers"> Add four answer options:</label> <br />
 
-            A)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" id="answers" type="text" >  </textarea> <br />
-            B)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" type="text" >  </textarea><br />
-            C)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" type="text" >  </textarea><br />
-            D)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" type="text" > </textarea><br />
+            <section data-js="formCard"> A)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" id="answers" type="text" >  </textarea> <br /></section>
+              <section data-js="formCard"> B)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" type="text" >  </textarea><br /></section>
+                <section data-js="formCard"> C)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" type="text" >  </textarea><br /></section>
+                  <section data-js="formCard"> D)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" type="text" > </textarea><br /></section>
           </section>
 
           <section class="qbox__results">
             <h2>solution</h2>
             Tick the right answer: <br />
 
-            <ul class="quiz-card__answer">
+            <ul class="create__quiz-card__answer">
               <label for="q1a"> A) </label>
               <input type="radio" name="q1" value="a" id="q1a" />
               <br />
@@ -323,7 +323,7 @@
             </ul>
           </section>
         </div>
-        <section class="shareIt">
+        <section class="share-it">
           <h2>share it to the world</h2>
           <img src="./images/boho-pfeil.png" width="125" height="" alt="home" />
           <br />
