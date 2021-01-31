@@ -2,7 +2,7 @@
   border-radius: 40% 30% 20% 40%;
   background: #8fa8ac;
   border: solid 1px black;
-  margin: 60px 40px 60px 40px;
+  margin: 60px 40px;
   box-shadow: 0 1.5px 5px;
   position: relative;
 }
@@ -16,25 +16,27 @@
 .quiz-card__answer {
   text-align: left;
 }
+.create__quiz-card__answer {
+  text-align: center;
+}
 
-.quiz-card__results {
+.quiz-card__result {
+  font-family: 'Amatic SC', cursive;
+  margin: 0 0 20px;
+  box-shadow: 0 2px 5px;
+  background: transparent;
+  border-radius: 76% 24% 64% 36% / 54% 41% 59% 46%;
+  width: 150px;
+  height: 50px;
+}
+
+/* .quiz-card__results {
   border-radius: 40% 30% 20% 40%;
   background: pink;
   border: solid 1px black;
-}
-.bookmark {
-  position: absolute;
-  top: -10px;
-  right: 10px;
-  background-color: transparent;
-  border: none;
-  filter: invert(99%) sepia(1%) saturate(4927%) hue-rotate(50deg)
-    brightness(121%) contrast(91%);
-  /* filter: invert(71%) sepia(35%) saturate(5182%) hue-rotate(319deg)
-    brightness(88%) contrast(78%);
- */
-}
-.animation-result {
+} */
+
+/* .animation-result {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -57,4 +59,24 @@
   100% {
     opacity: 1;
   }
+} */
+
+.bookmark {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  filter: invert(99%) sepia(1%) saturate(4927%) hue-rotate(50deg)
+    brightness(121%) contrast(91%);
+  /* filter: invert(71%) sepia(35%) saturate(5182%) hue-rotate(319deg)
+    brightness(88%) contrast(78%);
+    Better set a "normal" color than using filters.
+    That's a lot of filters with a few weird values. e.g. saturate is 4927 percent? Also invert with 99% is a bit odd. I would incurage you tl use just a color value to change the look as filters are error-prone (as it's done via GPU and each GPU calculates those things a bit differently). Especially at edge cases.
+ */
+}
+
+.activebookmark {
+  filter: invert(96%) sepia(36%) saturate(6615%) hue-rotate(169deg)
+    brightness(118%) contrast(101%);
 }

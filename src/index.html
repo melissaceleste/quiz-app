@@ -19,17 +19,14 @@
     </header>
     <main class="app-grid__main">
       <section data-js="pagehome">
-        <!-- <div class="bookmark">
-            <img src="images/bookmark.svg" alt="bookmark" width="50px" />
-          </div> -->
-
-        <section class="quiz-card">
+        <section class="quiz-card" data-js="card">
           <button class="bookmark">
             <img
               src="./images/bookmark.svg"
               alt="bookmark"
               width="30"
               height=""
+              data-js="bookmarkicon"
             />
           </button>
           <p class="quiz-card__question">
@@ -49,20 +46,23 @@
               >Tomate-Morzarella</label
             ><br />
           </ul>
-          <details class="quiz-card__loesung">
-            <summary>The Right answers is</summary>
-            <strong>Question 1:</strong> The correct answer is the
-            <strong>Tomete-Morzarella!</strong>.
-          </details>
+          <button class="quiz-card__result" data-js="buttonShowAnswer">
+            The Right answers is
+          </button>
+          <div class="hidden" data-js="answer">
+            <strong>Question 1:</strong> The correct answer is
+            <strong>Tomate-Morzarella!</strong>.
+          </div>
         </section>
 
-        <section class="quiz-card">
+        <section class="quiz-card" data-js="card">
           <button class="bookmark">
             <img
               src="./images/bookmark.svg"
               alt="bookmark"
               width="30"
               height=""
+              data-js="bookmarkicon"
             />
           </button>
           <p class="quiz-card__question">
@@ -82,20 +82,23 @@
               >11 Gramm</label
             ><br />
           </ul>
-          <details class="quiz-card__loesung">
-            <summary>The Right answers is</summary>
-            <strong>Question 1:</strong> The correct answer is the
-            <strong class="animation-result">0,2 Gramm!</strong>.
-          </details>
+          <button class="quiz-card__result" data-js="buttonShowAnswer">
+            The Right answers is
+          </button>
+          <div class="hidden" data-js="answer">
+            <strong>Question 1:</strong> The correct answer is
+            <strong>0,2 Gramm!</strong>.
+          </div>
         </section>
 
-        <section class="quiz-card">
+        <section class="quiz-card" data-js="card">
           <button class="bookmark">
             <img
               src="./images/bookmark.svg"
               alt="bookmark"
               width="30"
               height=""
+              data-js="bookmarkicon"
             />
           </button>
           <p class="quiz-card__question">
@@ -115,20 +118,23 @@
               >Ihre Mutter am Geruch erkennen</label
             ><br />
           </ul>
-          <details class="quiz-card_loesung">
-            <summary>The Right answers is</summary>
-            <strong>Question 1:</strong> The correct answer is the
+          <button class="quiz-card__result" data-js="buttonShowAnswer">
+            The Right answers is
+          </button>
+          <div class="hidden" data-js="answer">
+            <strong>Question 1:</strong> The correct answer is
             <strong>Gleichzeitig Schlucken und Atmen</strong>.
-          </details>
+          </div>
         </section>
 
-        <section class="quiz-card">
+        <section class="quiz-card" data-js="card">
           <button class="bookmark">
             <img
               src="./images/bookmark.svg"
               alt="bookmark"
               width="30"
               height=""
+              data-js="bookmarkicon"
             />
           </button>
           <p class="quiz-card__question">
@@ -149,11 +155,13 @@
               >..der erste Regen fällt.</label
             ><br />
           </ul>
-          <details class="quiz-card__loesung">
-            <summary>The Right answers is</summary>
-            <strong>Question 1:</strong> The correct answer is the
+          <button class="quiz-card__result" data-js="buttonShowAnswer">
+            The Right answers is
+          </button>
+          <div class="hidden" data-js="answer">
+            <strong>Question 1:</strong> The correct answer is
             <strong>..der erste Regen fällt.</strong>.
-          </details>
+          </div>
         </section>
       </section>
 
@@ -165,6 +173,7 @@
             alt="bookmark"
             width="30"
             height=""
+            data-js="bookmarkicon"
           />
         </h2>
 
@@ -175,6 +184,7 @@
               alt="bookmark"
               width="30"
               height=""
+              data-js="bookmarkicon"
             />
           </button>
           <summary class="quiz-card__question">
@@ -206,6 +216,7 @@
               alt="bookmark"
               width="30"
               height=""
+              data-js="bookmarkicon"
             />
           </button>
           <summary class="quiz-card__question">
@@ -237,6 +248,7 @@
               alt="bookmark"
               width="30"
               height=""
+              data-js="bookmarkicon"
             />
           </button>
           <summary class="quiz-card__question">
@@ -262,32 +274,40 @@
         </details>
       </section>
 
+      <!--soll sich leeren .
+        wieder fokusieren .
+        aufs erste input .
+        anzahl der zeichen
+      soll begrenzt sein und runterzählen -->
+
       <section hidden data-js="pagecreate">
         <h2 class="underline">create your own question</h2>
         <h4>let your creativity flow...</h4>
-
+        <form data-js="formContainer">
         <div class="border">
-          <section qbox__question>
+          <section qbox__question data-js="formCard">
             <h2>question</h2>
             <label for="question"> Write your own question: </label> <br />
-            <input id="question" type="text" />
+            <span data-js="counter"> 100</span>
+            <textarea id="question" type="text" rows="2" cols="40" maxlength="100" data-js="formInput"> </textarea>
+            
           </section>
 
-          <section>
+          <section data-js="formCard">
             <h2>answers</h2>
             <label for="answers"> Add four answer options:</label> <br />
 
-            A) <input id="answers" type="text" /> <br />
-            B) <input type="text" /> <br />
-            C) <input type="text" /> <br />
-            D) <input type="text" /> <br />
+            <section data-js="formCard"> A)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" id="answers" type="text" >  </textarea> <br /></section>
+              <section data-js="formCard"> B)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" type="text" >  </textarea><br /></section>
+                <section data-js="formCard"> C)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" type="text" >  </textarea><br /></section>
+                  <section data-js="formCard"> D)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" type="text" > </textarea><br /></section>
           </section>
 
           <section class="qbox__results">
             <h2>solution</h2>
             Tick the right answer: <br />
 
-            <ul class="quiz-card__answer">
+            <ul class="create__quiz-card__answer">
               <label for="q1a"> A) </label>
               <input type="radio" name="q1" value="a" id="q1a" />
               <br />
@@ -303,19 +323,23 @@
             </ul>
           </section>
         </div>
-        <section>
+        <section class="share-it">
           <h2>share it to the world</h2>
           <img src="./images/boho-pfeil.png" width="125" height="" alt="home" />
           <br />
 
-          <button data-js="submitbutton" class="submit-button">submit</button>
-          <div hidden data-js="submittext" class="submitbuttontext">
+          <button data-js="submitButton" class="submit-button">submit</button>
+          <div hidden data-js="submitText" class="submitbuttontext">
             Great! Your question is now ready for the world.
           </div>
+       </form>
+
+
+          <section hidden data-js="pageprofile">
+            hier kommt das profil...
+          </section>
         </section>
       </section>
-
-      <section hidden data-js="pageprofile">hier kommt das profil...</section>
     </main>
     <nav class="navigation">
       <img
