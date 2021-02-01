@@ -1,5 +1,14 @@
-console.clear()
+import questionCards from './questionCards.js'
+import navigation from './navigation.js'
+import bookmarks from './bookmarks.js'
+import createForm from './createForm.js'
 
+questionCards()
+navigation()
+bookmarks()
+createForm()
+
+/* 
 const pagehome = document.querySelector('[data-js=pagehome]')
 const pagebookmark = document.querySelector('[data-js=pagebookmark]')
 const pagecreate = document.querySelector('[data-js=pagecreate]')
@@ -104,3 +113,4 @@ formCards.forEach(formCard => {
 function getElement(dataJsName) {
   return document.querySelector(`[data-js="${dataJsName}"]`)
 }
+ */
