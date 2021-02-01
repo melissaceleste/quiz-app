@@ -13,8 +13,8 @@ export default function createForm() {
   })
 
   formCards.forEach(formCard => {
-    const formInput = getByDataJs('formInput')
-    const counter = getByDataJs('counter')
+    const formInput = getByDataJs('formInput', formCard)
+    const counter = getByDataJs('counter', formCard)
 
     formInput.addEventListener('input', () => {
       const textLength = formInput.value.length

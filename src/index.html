@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles/index.css" />
-    <link rel="shortcut icon" href="#">
+    <link rel="shortcut icon" href="#" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
@@ -18,7 +18,7 @@
       <h1>Quizzzle</h1>
     </header>
     <main class="app-grid__main">
-      <section data-js="pagehome">
+      <section data-js="page" data-name="pageHome">
         <section class="quiz-card" data-js="card">
           <button class="bookmark">
             <img
@@ -165,7 +165,7 @@
         </section>
       </section>
 
-      <section hidden data-js="pagebookmark">
+      <section data-js="page" data-name="pageBookmark">
         <h2 class="underline">
           Your bookmarks
           <img
@@ -274,71 +274,121 @@
         </details>
       </section>
 
-      <!--soll sich leeren .
-        wieder fokusieren .
-        aufs erste input .
-        anzahl der zeichen
-      soll begrenzt sein und runterzählen -->
-
-      <section hidden data-js="pagecreate">
+      <section data-js="page" data-name="pageCreate">
         <h2 class="underline">create your own question</h2>
         <h4>let your creativity flow...</h4>
         <form data-js="formContainer">
-        <div class="border">
-          <section qbox__question data-js="formCard">
-            <h2>question</h2>
-            <label for="question"> Write your own question: </label> <br />
-            <span data-js="counter"> 100</span>
-            <textarea id="question" type="text" rows="2" cols="40" maxlength="100" data-js="formInput"> </textarea>
-            
-          </section>
+          <div class="border">
+            <section qbox__question data-js="formCard">
+              <h2>question</h2>
+              <label for="question"> Write your own question: </label> <br />
+              <span data-js="counter"> 100</span>
+              <textarea
+                id="question"
+                type="text"
+                rows="2"
+                cols="40"
+                maxlength="100"
+                data-js="formInput"
+              >
+              </textarea>
+            </section>
 
-          <section data-js="formCard">
-            <h2>answers</h2>
-            <label for="answers"> Add four answer options:</label> <br />
+            <section data-js="formCard">
+              <h2>answers</h2>
+              <label for="answers"> Add four answer options:</label> <br />
 
-            <section data-js="formCard"> A)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" id="answers" type="text" >  </textarea> <br /></section>
-              <section data-js="formCard"> B)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" type="text" >  </textarea><br /></section>
-                <section data-js="formCard"> C)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" type="text" >  </textarea><br /></section>
-                  <section data-js="formCard"> D)<span data-js="counter"> 100</span> <textarea rows="2" cols="40" maxlength="100" data-js="formInput" type="text" > </textarea><br /></section>
-          </section>
+              <section data-js="formCard">
+                A)<span data-js="counter"> 100</span>
+                <textarea
+                  rows="2"
+                  cols="40"
+                  maxlength="100"
+                  data-js="formInput"
+                  id="answers"
+                  type="text"
+                >
+                </textarea>
+                <br />
+              </section>
+              <section data-js="formCard">
+                B)<span data-js="counter"> 100</span>
+                <textarea
+                  rows="2"
+                  cols="40"
+                  maxlength="100"
+                  data-js="formInput"
+                  type="text"
+                >
+                </textarea
+                ><br />
+              </section>
+              <section data-js="formCard">
+                C)<span data-js="counter"> 100</span>
+                <textarea
+                  rows="2"
+                  cols="40"
+                  maxlength="100"
+                  data-js="formInput"
+                  type="text"
+                >
+                </textarea
+                ><br />
+              </section>
+              <section data-js="formCard">
+                D)<span data-js="counter"> 100</span>
+                <textarea
+                  rows="2"
+                  cols="40"
+                  maxlength="100"
+                  data-js="formInput"
+                  type="text"
+                >
+                </textarea
+                ><br />
+              </section>
+            </section>
 
-          <section class="qbox__results">
-            <h2>solution</h2>
-            Tick the right answer: <br />
+            <section class="qbox__results">
+              <h2>solution</h2>
+              Tick the right answer: <br />
 
-            <ul class="create__quiz-card__answer">
-              <label for="q1a"> A) </label>
-              <input type="radio" name="q1" value="a" id="q1a" />
-              <br />
-              <label for="q1b"> B) </label>
-              <input type="radio" name="q1" value="b" id="q1b" />
-              <br />
-              <label for="q1c">C)</label>
-              <input type="radio" name="q1" value="c" id="q1c" />
-              <br />
-              <label for="q1d">D)</label>
-              <input type="radio" name="q1" value="d" id="q1d" />
-              <br />
-            </ul>
-          </section>
-        </div>
-        <section class="share-it">
-          <h2>share it to the world</h2>
-          <img src="./images/boho-pfeil.png" width="125" height="" alt="home" />
-          <br />
-
-          <button data-js="submitButton" class="submit-button">submit</button>
-          <div hidden data-js="submitText" class="submitbuttontext">
-            Great! Your question is now ready for the world.
+              <ul class="create__quiz-card__answer">
+                <label for="q1a"> A) </label>
+                <input type="radio" name="q1" value="a" id="q1a" />
+                <br />
+                <label for="q1b"> B) </label>
+                <input type="radio" name="q1" value="b" id="q1b" />
+                <br />
+                <label for="q1c">C)</label>
+                <input type="radio" name="q1" value="c" id="q1c" />
+                <br />
+                <label for="q1d">D)</label>
+                <input type="radio" name="q1" value="d" id="q1d" />
+                <br />
+              </ul>
+            </section>
           </div>
-       </form>
+          <section class="share-it">
+            <h2>share it to the world</h2>
+            <img
+              src="./images/boho-pfeil.png"
+              width="125"
+              height=""
+              alt="home"
+            />
+            <br />
 
-
-          <section hidden data-js="pageprofile">
-            hier kommt das profil...
+            <button data-js="submitButton" class="submit-button">submit</button>
+            <div hidden data-js="submitText" class="submitbuttontext">
+              Great! Your question is now ready for the world.
+            </div>
           </section>
-        </section>
+        </form>
+      </section>
+
+      <section data-js="page" data-name="pageProfile">
+        hier kommt das profil...
       </section>
     </main>
     <nav class="navigation">
@@ -347,8 +397,8 @@
         width="40"
         alt="home"
         height=""
-        class="active-icon"
-        data-js="iconhome"
+        data-js="nav"
+        data-name="pageHome"
       />
 
       <img
@@ -356,7 +406,8 @@
         width="22"
         alt="bookmarks"
         height=""
-        data-js="iconbookmark"
+        data-js="nav"
+        data-name="pageBookmark"
       />
 
       <img
@@ -364,7 +415,8 @@
         width="30"
         height=""
         alt="create"
-        data-js="iconreate"
+        data-js="nav"
+        data-name="pageCreate"
       />
 
       <img
@@ -372,7 +424,8 @@
         width="22"
         height=""
         alt="profile/Settings"
-        data-js="iconprofile"
+        data-js="nav"
+        data-name="pageProfile"
       />
     </nav>
   </body>
