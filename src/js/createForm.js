@@ -2,15 +2,17 @@ import getAllByDataJs from './getAllByDataJs.js'
 import getByDataJs from './getByDataJs.js'
 
 export default function createForm() {
-  const formContainer = getByDataJs('formContainer')
-  const formCards = getAllByDataJs('formCard', formContainer)
+  const form = getByDataJs('form')
+  const formCards = getAllByDataJs('formCard', form)
   const submitText = getByDataJs('submitText')
 
-  formContainer.addEventListener('submit', event => {
+  form.addEventListener('submit', event => {
     event.preventDefault()
-    formContainer.reset()
+    form.reset()
     submitText.hidden = false
   })
+
+  // (submit= Typ , event= Information), nur leere Klammer (), wenn ich das Event nicht benutzen will
 
   formCards.forEach(formCard => {
     const formInput = getByDataJs('formInput', formCard)

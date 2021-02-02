@@ -8,3 +8,7 @@
 .border {
   border: solid 1px black;
 }
+
+.hidden {
+  display: none !important;
+}

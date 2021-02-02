@@ -7,22 +7,36 @@ body {
   font-family: sans-serif;
   font-size: 22px;
   line-height: 1.5;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   text-align: center;
   font-family: 'Amatic SC', cursive;
-  overflow-y: hidden;
-  size: 100vh;
+  background-image: url('../images/background.jpg');
+  height: 100vh;
 }
 
 header {
+  margin: auto 10px;
+  top: 10px;
+  position: fixed !important;
+  position: absolute;
+  height: 15%;
+  width: 93%;
+  z-index: 100;
   background: #ede3d7;
-  margin: 1px;
-  padding-bottom: 40px;
   color: ivory;
   text-align: center;
   border-radius: 40% 30% 20% 40%;
   border: solid 1px black;
   box-shadow: 0 1.5px 5px;
+}
+
+main {
+  top: 15%;
+  height: 80%;
+  position: relative;
+  overflow: auto;
+  width: 100%;
 }
 
 h1,
@@ -56,10 +70,6 @@ img {
 
 .border {
   margin: 20px;
-}
-
-.hidden {
-  display: none !important;
 }
 
 form {

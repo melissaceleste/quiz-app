@@ -13,11 +13,11 @@
     />
     <script defer type="module" src="./js/index.js"></script>
   </head>
-  <body class="app-grid">
+  <body>
     <header>
       <h1>Quizzzle</h1>
     </header>
-    <main class="app-grid__main">
+    <main>
       <section data-js="page" data-name="pageHome">
         <section class="quiz-card" data-js="card">
           <button class="bookmark">
@@ -165,7 +165,7 @@
         </section>
       </section>
 
-      <section data-js="page" data-name="pageBookmark">
+      <section class="hidden" data-js="page" data-name="pageBookmark">
         <h2 class="underline">
           Your bookmarks
           <img
@@ -274,10 +274,10 @@
         </details>
       </section>
 
-      <section data-js="page" data-name="pageCreate">
+      <section class="hidden" data-js="page" data-name="pageCreate">
         <h2 class="underline">create your own question</h2>
         <h4>let your creativity flow...</h4>
-        <form data-js="formContainer">
+        <form data-js="form">
           <div class="border">
             <section qbox__question data-js="formCard">
               <h2>question</h2>
@@ -387,7 +387,7 @@
         </form>
       </section>
 
-      <section data-js="page" data-name="pageProfile">
+      <section class="hidden" data-js="page" data-name="pageProfile">
         hier kommt das profil...
       </section>
     </main>
@@ -399,6 +399,7 @@
         height=""
         data-js="nav"
         data-name="pageHome"
+        class="active-icon"
       />
 
       <img
